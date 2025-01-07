@@ -10,7 +10,7 @@ const watchlist = []
 // // //FUNCTIONS
 const promptUser = function(){
     filmTitle = window.prompt("What movie are you interested in seeing?")
-    filmRating = window.prompt("Enter the imdb rating")
+    filmRating = window.prompt("Enter the imdb rating", 0)
 
     //
     // //
