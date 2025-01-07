@@ -17,12 +17,12 @@ const promptUser = function(){
     // // //CONDITIONALS
     if (filmRating > 5 && !isFinite(filmTitle)){
         addToWatchlist(filmTitle)
+        document.getElementById('target').innerHTML = `Here's your movie watchlist: ${watchlist}`
     } else if (filmRating < 4.5){
         window.alert("Rating is too low to be added to the watchlist")
     } else {
         window.alert("Invalid movie title. Cannot accept only numbers")
     }
-    document.getElementById('target').innerHTML = `Here's your movie watchlist: ${watchlist}`
 }
 
 const addToWatchlist = function(title){
