@@ -15,7 +15,7 @@ const promptUser = function(){
     //
     // //
     // // //CONDITIONALS
-    if (filmRating > 5 && !isFinite(filmTitle)){
+    if (filmRating >= 5 && !isFinite(filmTitle)){
         addToWatchlist(filmTitle)
         document.getElementById('target').innerHTML = `Here's your movie watchlist: ${watchlist}`
     } else if (filmRating < 5){
